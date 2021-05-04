@@ -13,11 +13,15 @@
     <div class="main container-fluid">
         <header class="header-page">
             <div class="row p-1">
-                <div class="col-4 header-page__item-logo">
-                    header logo
+                <div class="col-4 header-page__item-logo p-0">
+                    <div class="content-page__logo">
+                        LOGO
+                    </div>
                 </div>
-                <div class="col-8 header-page__item-menu">
-                    header links
+                <div class="col-8 header-page__item-menu ps-2 pe-0">
+                    <div class="content-page__menu">
+                        MENU LINKS
+                    </div>
                 </div>
             </div>
         </header>
@@ -25,23 +29,27 @@
         <div class="content-page gx-5">
             <div class="row p-1">
                 <div class="col-12 content-page__slider">
-                    div slider
+                    SLIDER
                 </div>
             </div>
-                <div class="row p-1 justify-content-between content-page__news">
-                    <div class="col-md-4 col-xs-12 content-page__news-item d-flex">
-                        1/3
+            <div class="row justify-content-between content-page__news">
+                <div class="col-md-4 col-xs-12 content-page__news-item d-flex p-1">
+                    <div class="content-page__news-item-content">
+                        NEWS 1
                     </div>
-                    <div class="col-md-4 col-xs-12 content-page__news-item d-flex">
-                        2/3
+                </div>
+                <div class="col-md-4 col-xs-12 content-page__news-item d-flex p-1">
+                    <div class="content-page__news-item-content">
+                        NEWS 2
                     </div>
-                    <div class="col-md-4 col-xs-12 content-page__news-item d-flex">
-                        3/3
+                </div>
+                <div class="col-md-4 col-xs-12 content-page__news-item d-flex p-1">
+                    <div class="content-page__news-item-content">
+                        NEWS 3
                     </div>
-                
+                </div>
             </div>
         </div>
-
     </div>
     </div>
 </body>
@@ -49,23 +57,41 @@
 </html>
 
 <style>
+    body{
+        margin: 0;
+        height: 100vh;
+    }
     .header-page__item-logo {
         height: 80px;
-        background-color: #bf0523;
     }
 
+    .content-page__logo{
+        background-color: #bf0523;
+        width: 100%;
+        height: 100%;
+    }
+
+    .content-page__menu{
+        background-color: #b1b0b5;
+        width: 100%;
+        height: 100%;
+    }
     .header-page__item-menu {
         height: 80px;
-        background-color: #b1b0b5;
     }
 
     .content-page__slider {
-        height: 200px;
+        height: 300px;
         background-color: #c3c3cd;
     }
 
     .content-page__news-item {
-        height: 150px;
+        height: 200px;
+    }
+
+    .content-page__news-item-content {
         background-color: #9c99a0;
+        width: 100%;
+        height: 100%;
     }
 </style>
